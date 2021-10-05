@@ -14,11 +14,8 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
-      - name: Setup dotnet
-        uses: actions/setup-dotnet@v1
+      - name: Build dotnet
+        uses: damienaicheh/demo-action-composite/dotnet-build@v0.0.1
         with:
-          dotnet-version: '5.0.x'
-
-      - run: dotnet restore src/DemoReusableTemplates.csproj   
-
-      - run: dotnet build src/DemoReusableTemplates.csproj 
+          dotnet-version: 5.0.x
+          project-path: src/DemoReusableTemplates.csproj
