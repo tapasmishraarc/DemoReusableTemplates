@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build_android:
+  build_dotnet:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '2.1.x'
+          dotnet-version: '5.0.x'
 
       - run: dotnet restore src/DemoReusableTemplates.csproj   
 
