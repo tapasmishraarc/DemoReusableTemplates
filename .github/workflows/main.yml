@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build dotnet
-        uses: damienaicheh/demo-action-composite/dotnet-build@v0.0.1
+        uses: tapasmishraarc/demo-action-composite/dotnet-build@v0.0.1
         with:
           dotnet-version: 5.0.x
           project-path: src/DemoReusableTemplates.csproj
