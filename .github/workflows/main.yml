@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build_dotnet:
+  build:
     uses: tapasmishraarc/demo-action-composite/.github/workflows/build.yml@main
     with:
       dotnet-version: 5.0.x
