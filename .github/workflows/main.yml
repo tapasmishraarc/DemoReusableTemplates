@@ -1,5 +1,4 @@
 name: Main
-# main job
 on:
   push:
     branches: [main]
