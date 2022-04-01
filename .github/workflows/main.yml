@@ -8,14 +8,8 @@ on:
 
 jobs:
   build_dotnet:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout the code
-        uses: actions/checkout@v2
-
-      - name: Build project
-        uses: tapasmishraarc/demo-action-composite/Build/build.yml@main
-        with:
-          dotnet-version: 5.0.x
-          project-path: src/DemoReusableTemplates.csproj
+    uses: tapasmishraarc/demo-action-composite/.github/workflows/build.yml@main
+    with:
+      dotnet-version: 5.0.x
+      project-path: src/DemoReusableTemplates.csproj
+        
