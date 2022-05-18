@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     uses: tapasmishraarc/ReusableGitHubWorkflows/.github/workflows/template.yml@main
+    
     with:
       ci-enabled: true
       dotnet-version: 5.0.x
